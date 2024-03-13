@@ -258,7 +258,7 @@ view: order_items {
     label: "Sale Price"
     type: number
     value_format_name: usd
-    sql: ${TABLE}.sale_price;;
+    sql: ${TABLE}.sale_price *1.10;;
   }
 
   dimension: gross_margin {
@@ -287,7 +287,7 @@ view: order_items {
     label: "Total Sale Price"
     type: sum
     value_format_name: usd
-    sql: ${sale_price} ;;
+    sql: ${sale_price};;
     drill_fields: [detail*]
   }
 
