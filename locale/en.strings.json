@@ -385,11 +385,18 @@
 "Avg # of Web Events": "Avg # of Web Events",
 "Avg # of Orders": "Avg # of Orders",
 "Name": "Name",
+"Currently Active Customer": "Currently Active Customer",
 "Products": "Products",
 "Inventory Items": "Inventory Items",
 "Distribution Center": "Distribution Center",
 "Users Facts": "Users Facts",
 "Repeat Purchase Rate": "Repeat Purchase Rate",
 "New Users Acquired": "New Users Acquired",
-"Orders This Year": "Orders This Year"
+"Orders This Year": "Orders This Year",
+"Discounts": "Discounts",
+"Created Date" : "Created Date",
+"Delivered Date" : "Delivered Date",
+"Returned Date" : "Returned Date",
+"Shipped Date" : "Shipped Date",
+"Active User Count" : "Active User Count"
 }

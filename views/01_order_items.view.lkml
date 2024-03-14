@@ -157,6 +157,7 @@ view: order_items {
   ########## Time Dimensions ##########
 
   dimension_group: returned {
+    label: "Returned Date"
     type: time
     timeframes: [time, date, week, month, raw]
     sql: ${TABLE}.returned_at ;;
@@ -164,6 +165,7 @@ view: order_items {
   }
 
   dimension_group: shipped {
+    label: "Shipped Date"
     type: time
     timeframes: [date, week, month, raw]
     sql: CAST(${TABLE}.shipped_at AS TIMESTAMP) ;;
@@ -171,6 +173,7 @@ view: order_items {
   }
 
   dimension_group: delivered {
+    label: "Delivered Date"
     type: time
     timeframes: [date, week, month, raw]
     sql: CAST(${TABLE}.delivered_at AS TIMESTAMP) ;;
@@ -178,6 +181,7 @@ view: order_items {
   }
 
   dimension_group: created {
+    label: "Created Date"
     type: time
     timeframes: [time, hour, date, week, month, year, hour_of_day, day_of_week, month_num, raw, week_of_year,month_name]
     sql: ${TABLE}.created_at ;;
@@ -413,6 +417,7 @@ view: order_items {
   }
 
   measure: 30_day_repeat_purchase_rate {
+    label: "30 Day Repeat Purchase Rate"
     description: "The percentage of customers who purchase again within 30 days"
     view_label: "Repeat Purchase Facts"
     type: number

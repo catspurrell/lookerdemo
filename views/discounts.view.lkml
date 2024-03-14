@@ -1,4 +1,5 @@
 view: discounts {
+  view_label: "Discounts"
   sql_table_name: looker-private-demo.ecomm.discounts;;
 
   measure: count {
